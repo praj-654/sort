@@ -1,0 +1,42 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+    public static void bubblesort(int[] arr,int n){
+        //boolean swap=false;
+        for(int i=0;i<n;i++)
+        {
+           // boolean swap=false;
+            for(int j=0;j<n-i-1;j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                    //swap=true;
+                }
+            }
+            // if(swap==false)
+            // {
+            //     break;
+            // }
+        }
+       
+    }
+	public static void main(String[] args) {
+		int[] arr={55,5,11,9,2,7,44};
+		int n=arr.length;
+		bubblesort(arr,n);
+		for(int i=0;i<n;i++)
+		{
+		    System.out.println(arr[i]);
+		}
+	}
+}
